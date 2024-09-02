@@ -1,0 +1,4 @@
+repository "MobileDev@SanetroHG@cloud"
+  path "/"
+    br "/main"
+    co "/main"
