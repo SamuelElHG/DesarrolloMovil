@@ -3,7 +3,14 @@ using UnityEngine;
 
 public class PipeSpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject pipe;
+    [Header("SpriteRandomizer")]
+    [SerializeField, Header("BackGround")] private SpriteRenderer bgSpriteRenderer;
+    [SerializeField] private Sprite[] BGsprites;
+
+    [SerializeField] private GameObject[] pipe;
+
+    int randomIndex;
+
 
     [Space, SerializeField] private float timeToSpawnFirstPipe;
     [SerializeField] private float timeToSpawnPipe;
@@ -15,6 +22,12 @@ public class PipeSpawner : MonoBehaviour
 
     private void Start()
     {
+        randomIndex = Random.Range(0, 2);
+        Sprite randomSprite = BGsprites[randomIndex];
+
+        // Asigna el sprite aleatorio al SpriteRenderer
+        bgSpriteRenderer.sprite = randomSprite;
+
         StartCoroutine(SpawnPipes());
     }
 
@@ -22,7 +35,7 @@ public class PipeSpawner : MonoBehaviour
     {
         Debug.Log("PipeSpawner :: SpawnPipe()");
 
-        Instantiate(pipe, GetPipePosition(), Quaternion.identity);
+        Instantiate(pipe[randomIndex], GetPipePosition(), Quaternion.identity);
     }
 
     private Vector3 GetPipePosition()

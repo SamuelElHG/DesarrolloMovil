@@ -9,6 +9,8 @@ public class Pipe : MonoBehaviour
     private void Start()
     {
         StartCoroutine(DestroyPipe());
+
+
     }
 
     private void Update()
@@ -30,4 +32,6 @@ public class Pipe : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+
+   
 }
