@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Jump
   - Left
+  - SlotZone
+  - Item
   layers:
   - Default
   - TransparentFX
