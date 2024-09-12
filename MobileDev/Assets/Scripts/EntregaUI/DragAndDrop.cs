@@ -6,6 +6,9 @@ using UnityEngine.EventSystems;
 
 public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
+    [SerializeField] public string ItemTag, nombre, descripción;
+
+
     private Canvas canvas;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
@@ -51,6 +54,12 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     {
         Debug.Log("Trigger detectado con: " + other.gameObject.name);
         endTransform = other.transform;
+
+        if (true)
+        {
+
+        }
+
     }
 
 }

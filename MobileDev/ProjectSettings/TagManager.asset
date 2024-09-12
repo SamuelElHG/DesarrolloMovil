@@ -8,6 +8,7 @@ TagManager:
   - Left
   - SlotZone
   - Item
+  - EquipmentSlot
   layers:
   - Default
   - TransparentFX
