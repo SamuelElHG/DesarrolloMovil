@@ -9,6 +9,7 @@ TagManager:
   - SlotZone
   - Item
   - EquipmentSlot
+  - SlotZoneOccupied
   layers:
   - Default
   - TransparentFX

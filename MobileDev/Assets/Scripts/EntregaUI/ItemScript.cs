@@ -53,14 +53,24 @@ public class ItemScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Trigger detectado con: " + other.gameObject.name);
-        endTransform = other.transform;
+        //other.gameObject.GetComponent<BoxCollider2D>().enabled = false;
 
-        if (other.CompareTag("EquipmentSlot"))
+        if (other.CompareTag("EquipmentSlot") || other.CompareTag("SlotZone"))
         {
-            Debug.Log("TriggerCon EquipmentSlot");
-           
+            endTransform = other.transform;
         }
 
     }
 
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        other.gameObject.GetComponent<BoxCollider2D>().enabled = true;
+        other.gameObject.tag = "SlotZone";
+    }
+
+    private void OnTriggerStay2D(Collider2D collision) //cuando salga puede tener el tag normal
+    {
+        collision.gameObject.tag = "SlotZoneOccupied";
+
+    }
 }
