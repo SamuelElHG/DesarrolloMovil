@@ -1,0 +1,54 @@
+{
+    "name": "PlayerControlsSam",
+    "maps": [
+        {
+            "name": "PlayerActions",
+            "id": "797b7b4e-4407-4feb-a7c9-9a89aa70a113",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "b021d7e4-8d37-4773-b7a4-85d7da27f0ec",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "e45e7cf3-1088-43a6-8e75-033f24eb5a64",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "88cfd538-63da-4f6e-a62f-f89b3c01abc2",
+                    "path": "<Joystick>/stick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ec3db183-677d-4df5-9fc9-8964f296cb81",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
