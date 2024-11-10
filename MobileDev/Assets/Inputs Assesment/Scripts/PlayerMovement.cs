@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 5f;
     private Vector2 moveInput;
     private bool isJumping;
-    private PlayerInput playerInput; // Cambia a la clase generada
+    private PlayerInput playerInput; 
     public float jumpForce = 5f;
     public Rigidbody rb;
 
@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Animator animator;
     private void Awake()
     {
-        playerInput = new PlayerInput(); // Usa la clase generada
+        playerInput = new PlayerInput(); 
     }
 
     private void OnEnable()

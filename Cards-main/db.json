@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Red",
+      "deck": [ 25, 3, 6,9,131,143],
+       "img":"https://github.com/Calcium-Carbonate/Cards/blob/main/masters-img/Red.png"
+    },
+    {
+      "id": 2,
+      "name": "Blue",
+      "deck": [ 18, 65, 112 ,103,130,6],
+      "img": "https://github.com/Calcium-Carbonate/Cards/blob/main/masters-img/Blue.png"
+    },
+    {
+      "id": 3,
+      "name": "Gold",
+      "deck": [ 424, 186, 157 ,185,468,192],
+      "img":"https://github.com/Calcium-Carbonate/Cards/blob/main/masters-img/Gold.png"
+    },
+    {
+      "id": 4,
+      "name": "Cynthia",
+      "deck": [ 445, 471, 448 ,468,350,442],
+     "img": "https://github.com/Calcium-Carbonate/Cards/blob/main/masters-img/Cintia.png"
+    },
+    {
+      "id": 33,
+      "name": "Simon",
+      "deck": [ 395, 724, 445 ,6,483,507],
+     "img": "https://github.com/Calcium-Carbonate/Cards/blob/main/masters-img/Simon.png"
+    }
+  ]
+}
