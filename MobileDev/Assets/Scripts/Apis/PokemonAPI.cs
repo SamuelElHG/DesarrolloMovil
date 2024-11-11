@@ -4,7 +4,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using TMPro;
-using static Unity.VisualScripting.Icons;
 
 #region ObjetosAPI
 [System.Serializable]
@@ -102,6 +101,7 @@ public class PokemonAPI : MonoBehaviour
 
         if (request.result == UnityWebRequest.Result.Success)
         {
+            resultText.text = "";
             string json = request.downloadHandler.text;
 
             // Deserializar los datos del Pokémon
@@ -111,14 +111,14 @@ public class PokemonAPI : MonoBehaviour
             pokemonID = pokemon.id;
 
             // Obtener las habilidades del Pokémon
-            resultText.text += "Habilidades: \n";
+            resultText.text += "Skills: \n";
             foreach (var ability in pokemon.abilities)
             {
                 resultText.text += "- " + ability.ability.name + "\n";
             }
 
             // Obtener los tipos del Pokémon
-            resultText.text += "Tipos: \n";
+            resultText.text += "Types: \n";
             foreach (var type in pokemon.types)
             {
                 resultText.text += "- " + type.type.name + "\n";
