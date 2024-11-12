@@ -14,7 +14,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/EntregaUI/UIScene.unity
     guid: 343d2187b6af49247a4aae05b1971859
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/EntregaInputs/InputsScene.unity
     guid: e25744f0c0d889f42a61b3df2d2fe725
+  - enabled: 1
+    path: Assets/Scenes/ApiScene/PokemonScene.unity
+    guid: 569218da6c9b5b0499b683650d876346
   m_configObjects: {}
